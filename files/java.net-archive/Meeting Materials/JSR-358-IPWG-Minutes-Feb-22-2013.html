@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>JSR 358 EG minutes: February 22 2013</title>
+
+<!--
+
+My personal stylesheet: <link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+And the jcp.org version: <link href="http://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+
+-->
+
+<link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+<link href="http://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+<h1 align="center">JSR 358 Expert Group Meeting Minutes<br />
+for February 22 2013</h1>
+<p align="center" class="red">&nbsp;</p>
+<h2><strong>Date</strong></h2>
+<ul>
+  <li>Friday 22 February 2013, 1:00-2:00 am PST</li>
+</ul>
+<h2>Location</h2>
+<ul>
+  <li>Teleconference</li>
+</ul>
+<h2><strong>Agenda</strong></h2>
+<ul>
+  <li><a href="http://java.net/projects/jsr358/downloads/download/Meeting Materials/JSR-358-February-2013.pdf">JSR 358 summary</a></li>
+  <li><a href="http://java.net/downloads/jsr358/Meeting Materials/RH_RI_TCK.pdf">RedHat response on RI &amp; TCK licensing</a></li>
+  <li>Follow up on recent discussions</li>
+  <li>Next steps</li>
+</ul>
+<h2>Attendees</h2>
+<ul>
+  <li>Patrick Curran</li>
+  <li>Steve Harris</li>
+  <li>Werner Keil</li>
+  <li>Anish Karmarkar</li>
+  <li>Scott Stark</li>
+  <li>Steve Wolfe</li>
+  <li>Mike Milinkovich</li>
+  <li>Regrets</li>
+  <ul>
+    <li>Gil Tene</li>
+    <li>Scott Jameson</li>
+  </ul>
+</ul>
+<h2>Minutes</h2>
+<p>Patrick responded for the record to a question that Steve Wolfe posed in private email: when we can expect feedback from Oracle on the licensing proposals? Steve had argued that other matters are &quot;gated&quot; on this. Patrick responded that he thought there were several other issues (for example, the matter of Essential Patents) where we could - if we wished - make some progress independently of the licensing proposals. This discussion continued at the end of the meeting (see below.)</p>
+<p><strong>RedHat's position on RI and TCK licensing</strong></p>
+<p>Scott Stark gave <a href="http://java.net/downloads/jsr358/Meeting Materials/RH_RI_TCK.pdf">RedHat's response</a> to the CloudBees proposal on RI and TCK licensing. He explained that RedHat wants faster change and argued that if we restrict the requirement to use open-source licenses  only to new JSRs then change will be minimal. RedHat want  all new and revised JSRs to be covered by open-source licenses <strong>including the umbrella JSRs</strong>.</p>
+<p>Scott corrected slide 3: this should state that section  1.4 of the Process Document (not the JSPA) gives the right to define compatibility and branding processes. Patrick noted that this language is particularly weak (simply stating that the Spec Lead is responsible for defining a compatibility certification process) and asked whether RedHat believed that no additional language (in the JSPA, for example) was necessary. Scott responded &quot;not necessarily.&quot;</p>
+<p>Anish asked whether  IBM could give their input on their experience with open source RIs and TCKs (since this is their routine practice.)</p>
+<p>Steve Wolfe: &quot;fraudulent&quot; claims of compatibility can be dealt with but yes, people could take an open-source TCK and make perfectly legal claims about having passed the tests and met the compatibility requirements. We need a separate brand which could be protected. Whether or not you believe that open-source licensing is &quot;compatible&quot; with Compatibility we're past that point. The fundamental issue is cost recovery.</p>
+<p>Scott Stark: it ought to be possible to define a process that enables people to have free access to the TCKs while still implementing a strong branding program and enabling cost recovery.</p>
+<p>Anish: people would be able to say that they have run the TCK tests and are compatible with the specification.</p>
+<p>Scott: we may need to add auditing to the compliance process.</p>
+<p>Steve Harris: it would be helpful to have a use-case-based response from Oracle. What specifically are people worried about? Fundamental objections may apply to both the CloudBees and the RedHat proposal - however the CloudBees proposal attempts to minimize the risk by spreading it out over time. Patrick said he would ask for feedback to be provided in this manner.</p>
+<p>In response to the slide <em>Compatibility #2</em> Patrick noted that the  first user could pass the TCK on to everyone else for free. Steve Harris: could we have separate licenses for use and for evaluation (R&amp;D) as is done with Oracle Spec Licenses today?</p>
+<p>Steve Harris: can't you add extra terms? You can get the TCK under an Apache license and meet these additional conditions. Patrick - then it's not an Apache license, it's some kind of weird hybrid. MikeM agreed and suggested that maybe the binary could be released under a different license.</p>
+<p>Patrick: the challenge is to give people access to the TCK for evaluation purposes (to verify that it's good quality, to ensure that it meets the requirements of the Process Document) while still enabling a strong compatibility regime and cost recovery.</p>
+<p>Slide 3. Scott re-emphasized that we ought to be able to distinguish between &quot;access&quot; and &quot;use for compatibility &amp; branding.&quot;</p>
+<p>Patrick asked Scott whether an evaluation license for the TCK in addition to a commercial license for branding purposes would meet his requirements. Scott said it would.</p>
+<p>SteveW: an Open-JDK-like license might be acceptable. </p>
+<p><strong>Next steps</strong></p>
+<p>Patrick reiterated that although he and Don will meet with Oracle execs on Monday, it's most unlikely that they will get a formal response next week. Should we meet next week and if so, what should we discuss?</p>
+<p>SteveW: I'm reluctant to move forward much more without knowing we're going to make real progress. It might be better for Oracle to come up with a proposal rather than making proposals when we have no idea whether they will be acceptable to Oracle. </p>
+<p>In response to questions about Oracle's  position Patrick reviewed the <em><a href="http://java.net/projects/jsr358/downloads/download/Meeting Materials/JSR-358-February-2013.pdf">Summary Presentation</a></em> and pointed out that he had incorporated the responses that Don Deutsch had given last year (see the slides titled &quot;Oracle response.&quot;) He noted that these address exactly the issues we are focusing on now.</p>
+<p>After further discussion the consensus of those present was that we should not hold further Working Group meetings on these or other issues until we have received some solid feedback from Oracle.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body></html>

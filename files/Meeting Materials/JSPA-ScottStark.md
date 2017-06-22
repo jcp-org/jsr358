@@ -1,0 +1,110 @@
+1\. Definitions, skipped
+
+2\. Participation  
+A. The Process. A process by which the Java platform evolves has been defined by community members and is available at http://jcp.org, and the JSPA supersedes the process in the event of a conflict. Terms in the JSPA not defined in Section 1 are defined in the process document.
+
+B. Evolution of Agreement. Members involved in updating the Java platform via the JSR process should execute a JSPA agreement, and can elect to agree to a newer version as it becomes available.
+
+3\. Process Cost Sharing. The following annual fee for each category of participation is due 30 days from execution of the agreement:  
+Commercial Entity: $5,000.00/year  
+Education, Government, non-profit organization: $2,000.00/year  
+Fee Bearing Java Technology Source Code Licensees of Oracle: $0.00  
+Individual representing self only: $0.00
+
+4\. Intellectual Property; In-Bound  
+A. Contributions to the Spec Lead. With respect to the Output of a JSR, you grant to each Spec Lead/Maintenance Lead for each Expert Group for which You are not the Spec Lead, a perpetual, non-exclusive, worldwide, royalty-free, fully paid-up and, subject to Section 4.D, irrevocable, license, with the right to sublicense:  
+I. Copyrights and Trade Secrets. Under Your applicable copyrights and trade secret rights which You currently have or may acquire in the future, to:  
+(a) incorporate any and all Contributions provided by You into current and future versions of the Output;  
+(b) copy, disclose and distribute the Contributions provided by You as part of the Spec for Community Review and Public Review and as part of the early access versions of the RI and TCK; and  
+(c) copy, modify, develop, disclose and distribute the Contributions provided by You, all as part of the Output, on terms consistent with those specified in Section 5 below.
+
+Works created by employees of the Federal Government are not subject to copyright protection within the United States and may be copied or used by interested parties.
+
+II. Patents  
+(a) You grant patent rights you now have or acquire in the future with respect to Contributions which are made by You, as part of the Output, with the right to sublicense, on terms consistent with those specified in Section 5 below, including the right to implement such Contribution as part of a compatible implementation of the Specification, per Section 5.B or 5.F respectively, under all of Your patent claims whose infringement cannot be avoided in a technically feasible manner when implementing the Specification. This will terminate if a sublicensee initiates a claim against you.
+
+(b) For Contributions which You make but not in a recorded form, the provisions of Section 6, and not this Section 4.A.II, shall apply, subject to any additional obligations You may have as the Spec Lead pursuant to Section 5\. The Spec. Lead may sublicense or assign any or all of the rights granted to it in this Section 4.A to a subcontractor for the development of the Output.
+
+B. Grants to Other Expert Group Members. You grant to Member represented on any Expert Group on which You participate Your applicable patents, copyrights and trade secret rights which You currently have or may acquire in the future, a perpetual, non-exclusive, worldwide, royalty-free, fully paid-up, irrevocable license to use Your Contributions for research and development purposes related to the activities of such Expert Group. Similarly, Oracle makes the same grant to You with respect to its Contributions concerning Expert Groups on which You are represented. These grants, from You to other Members and from Oracle to You, shall not include distribution to third parties of early access implementations of the Spec under development by Your Expert Group until the draft Spec has been released for Public Review.
+
+C. Contributions from Oracle and Ex-Spec Leads. Oracle grants the same license as does any other member with respect to its Contributions pursuant to Section 4.A to a Spec Lead. If You cease to be the Spec Lead before a JSR is completed, then any and all of the comments, specifications, materials or ideas provided by You, to the extent incorporated into any form of Output, shall be considered Contributions licensed pursuant to Sections 4.A and 4.B.
+
+D. Withdrawal of Contributions due to Change in Announced License Terms. If the Spec Lead for an Expert Group in which You are participating makes significant changes to the terms and conditions of any license granted pursuant to Sections 5.B or 5.F below after those terms and conditions are first disclosed pursuant to the Process, then You may, upon giving notice to the Specification Lead and the PMO, withdraw any copyright or patent licenses concerning Your Contributions granted pursuant to Section 4.A.I or 4.A.II  
+above (but not patent licenses granted by You pursuant to Section 6 below).
+
+5\. Intellectual Property; Out-Bound.  
+A. Ownership; Obligation to Publish Spec. Spec Lead(s) for a particular JSR at the time of the final release of the Specification shall own the copyright to the final Spec generated pursuant to that JSR under United States copyright law. Promptly after its completion (i.e. passes Final Approval Ballot), such Spec will be published by the PMO at the JCP Web Site.
+
+B. License to Create Independent Implementations. For any Specification produced under a new JSR, the Spec Lead for such JSR shall offer to grant a perpetual, non-exclusive, worldwide, fully paid-up, royalty free, irrevocable license under its licensable copyrights in and patent claims covering the Specification (including rights licensed to the Spec Lead pursuant to Section 4.A and 4.C) to anyone who wishes to create and/or distribute an Independent Implementation of the Spec. Such license will authorize the creation and distribution of Independent Implementations provided such Independent Implementations:  
+(a) fully implement the Spec(s) including all its required interfaces and functionality;  
+(b) do not modify, subset, superset or otherwise extend the Licensor Name Space, or include any public or protected packages, classes, Java interfaces, fields or methods within the Licensor Name Space other than those required/authorized by the Spec or Specs being implemented; and  
+(c) pass the TCK for such Spec.
+
+For the purposes of this Section 5.B, patent claims covering the Specification shall mean any claims for which there is no technically feasible way of avoiding infringement in the course of implementing the specification.
+
+C. Reciprocity.  
+I. The Spec Lead may condition its offer of the license described in Section 5.B upon its licensee’s commitment to offer to any party seeking a license from such licensee, if requested, a license under such licensee’s patent rights which are or would be infringed by all technically feasible implementations of the Spec on terms consistent with the provisions of Section 6.A excluding, for non-Members, its subsections (bb) and (ee).  
+II. The Spec Lead also may condition its offer of the license described in Section 5.B on a licensee not initiating a claim that the Spec Lead, has, in the course of performing its responsibilities as the Spec Lead, caused any infringement of the licensee's patent rights.  
+III. No provision of this Section 5.C shall be construed to compel, restrict or limit the terms on which the Spec Lead may grant or offer to grant patent licenses that are non-essential to implementation of a specification.  
+
+Other than as set forth above, the Spec Lead agrees not to impose any contractual condition that would limit the right of any licensee to create or distribute such Independent Implementations. The Spec License may otherwise include as additional terms and conditions only those that do not relate to the license grant but govern issues such as confidentiality, applicable law, dispute resolution, export control and government rights in data provisions, warranties and liabilities. In addition, the Spec Lead for each JSR hereby agrees that it will not use the rights granted or licensed to it under another JSR that does not satisfy the requirements of subparagraphs (a) through (c) above.
+
+D. Continued Availability. If a Specification produced under a new or revised Umbrella JSR include a JSR previously available as an Independent Implementation (“Stand-Alone Component”), then the Spec Lead for the Stand-Alone Component may determine in accordance with the Process whether or not to make the Stand-Alone Component available for Independent Implementation in its revised form as publicized under the Umbrella JSR. The Spec Lead for the Stand-Alone Component shall not restrict the right of a third party to create an Independent Implementation of the most recent prior version of the Stand-Alone Component.
+
+E. Downstream Licenses for Independent Implementations. A Downstream Licensee need not include any particular “pass through” requirements in any license the Downstream Licensee grants concerning the use of its Independent Implementation or products derived from it. However, except with respect to implementations of the Specification by the Downstream Licensee’s licensee that satisfy the full JSPA requirements, the Downstream Licensee may neither: (i) grant or otherwise pass through to its licensees any licensable copyrights and patent rights of the Spec Lead; nor (ii) authorize its licensees to make any claims concerning their implementation’s compliance with the Spec in question.
+
+F. Licensing of RI and TCK.  
+I. The Spec Lead (including Oracle) for a JSR approved by the JCP shall offer to any interested party licenses to the RI and TCK on terms that are non-discriminatory, fair and reasonable. Except as otherwise set forth in this Section 5.F, such terms and conditions shall be determined by the Spec Lead in its reasonable discretion.
+
+II. With respect to the RI, the terms and conditions offered by the Spec Lead shall include, at a minimum:  
+(a) the right to copy, modify the source code portions of (excluding any Shared Code, except as provided for in Section 5.G) and distribute the RI, in whole or in part, as part of a complete binary implementation of the corresponding Spec that satisfies requirements (a) – (c) of Section 5.B; and  
+(b) patent grants to allow the right to make, have made, use, offer to sell, sell or import such implementation.
+
+III. With respect to the TCK when licensed separately from the RI, for a Qualified Not-for-Profit or Qualified Individual there shall be no charge for the license offered by the Spec Lead.
+
+IV. If the Spec Lead limits the scope of the licenses granted according to this Section 5.F, there are certain restriction on how limiting the license can be. None of this applies to existing Oracle RI/TCK licensing agreements, and does not imply Oracle needs to change those in the future.
+
+V. The Spec Lead is not required to license the RI (or TCK) in source code form, but this does not relieve the Spec Lead of its obligations concerning the RI and the TCK under the Process.
+
+VI. The Spec Lead may license the RI and Spec on terms and conditions consistent with Section 5.B(a)-(c), that allow implementation of the Spec to incorporate parts of the RI that are not Shared Code.
+
+G. Shared Code. For Specs developed under new JSRs, if it is determined in accordance with the Process that a fully compatible implementation of the Spec cannot be achieved without use of code from the RI, then the Spec Lead shall grant a perpetual, non-exclusive, worldwide, fully paid-up, royalty free license under its applicable intellectual property rights to allow anyone to incorporate the Shared Code as part of an Independent Implementation of the Spec that satisfies requirements (a)-(c) of Section 5.B. Such license may  
+not authorize the licensee to modify the Shared Code except to the extent necessary to enable its incorporation into the licensee’s Independent Implementation.
+
+H. Admission Against Interest. Oracle acknowledges that Your entering into this Agreement shall not prevent any defenses that against a claim that you infringed on Oracle’s or a third party’s copyright of the Specification.
+
+6\. Special Patent Considerations.  
+A. Grant. With respect to the Output of JSRs for which You are not the Spec Lead, You agree to patent grants, after adoption of the Spec, to all licensees under Section 5 and on fair, reasonable and non-discriminatory terms a perpetual, non-exclusive, non-transferable, worldwide license within the scope of the licenses granted in Sections 5.B and 5.F to:  
+(a) use the TCK; and  
+(b) where there is no technically feasible alternative that would avoid infringing the patent claim, either use the licensed RI, in whole or in part, as part of an implementation of the Spec(s) in question that satisfies requirements (a)–(c) of Section 5.B or develop, distribute, and use an Independent Implementation;
+
+However, You shall not be required to grant a license:  
+(aa) to a licensee not willing to grant a reciprocal license under its patent rights to You and to any other party seeking interested in the enforcement of such licensee’s patent claims;  
+(bb) if the Spec arises from a JSR for which Community Review has closed after termination of your membership in the JCP;  
+(cc) to any portion of any product which is not required in order to be fully compliant with the Spec;  
+(dd) to technology that is not required for at least one of the following: using the Reference Implementation, using the TCK, or developing, distributing or using an Independent Implementation; or  
+(ee) if, with respect to the Spec (or RI or TCK) in question, You identify prior to Public Review a perceived infringement and disclose in writing to the Spec Lead and the PMO the details of the relevant patent.
+
+Subject to Section 6.C below, the provisions required of and extended to You under this Section 6.A shall apply to Oracle with respect to Specifications under JSRs for which Oracle is not the Spec Lead.
+
+B. Disclosure. In addition to the disclosure requirements of Section 6.A(ee), each individual who represents a Member on an Expert Group shall disclose to that Expert Group promptly after he or she becomes aware of any issued patents the infringement of which, to the individual’s actual knowledge, cannot be avoided in a technically feasible manner in order to implement such Spec.
+
+C. Effect on Existing Agreements. No provision of this Section 6 shall be understood to require Oracle to modify license agreements for Java technology that Oracle has in place, or to modify or replace in future license agreements for Java technology provisions comparable to those currently in place.
+
+7\. No Obligations. Except as expressly set forth herein, this Agreement, does not obligate you to license terms, patent terms, etc.
+
+8\. Use of Trademarks. Unless you have a superseding agreement, You may refer to Oracle’s Java technology or programming language as given in The Third Party Usage Guidelines for Oracle Trademarks are currently available on the web at http://www.oracle.com/html/3party.html.
+
+9\. Confidentiality. Obsolete section.
+
+10\. Term and Termination. This Agreement shall commence on the Effective Date and, unless terminated earlier by You by written notice, continue for a period of one (1) year, and shall automatically renew each anniversary date thereafter until either party provides notice to the other of its intent to terminate the Agreement at least sixty (60) days prior to the next anniversary date. Section 13 shall continue to apply with respect to JSRs commenced during the term of this Agreement. Each version of this Agreement shall continue to apply with respect to any JSR approved for development while such version was in effect.
+
+11\. Publicity. Obsolete section.
+
+12\. Disclaimer of Warranties and Special Damages. Boiler plate disclaimer.
+
+13\. Survival. The parties’ obligations under Sections 4, 5, 6, 9, 11 and 12 shall survive any termination of this Agreement.
+
+14\. Government Employees. Terms of this Agreement are applicable to United States Federal employees or agencies to the extent that they do not conflict with Federal law or regulation, and if You are a Federal agency You agree to exercise whatever discretion granted to You by federal law and regulation to make such patent rights available on terms consistent with the principles of this Agreement.
+
+15\. Miscellaneous. This Agreement, including Exhibit A, constitutes the entire agreement between the parties concerning its subject matter with respect to any JSR commenced after the Effective Date, except for any license agreement between You and Oracle concerning its Java technology, which shall take precedence to the extent of any conflict between its intellectual property terms and those of this Agreement. Any action related to this Agreement will be governed by California law, excluding choice of law rules, provided, however that neither party has consented to the jurisdiction of any court located in the other party´s country of incorporation.

@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>JSR 358 EG minutes: January 16 2013</title>
+
+<!--
+
+My personal stylesheet: <link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+And the jcp.org version: <link href="http://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+
+-->
+
+<link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+<link href="http://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+<h1 align="center">JSR 358 Expert Group Meeting Minutes<br />
+for January 16 2013</h1>
+<h2><strong>Date</strong></h2>
+<ul>
+  <li>January 16, 2012</li>
+</ul>
+<h2>Location</h2>
+<ul>
+  <li>During the EC face-to-face meeting in Santa Clara, CA</li>
+</ul>
+<h2><strong>Agenda</strong></h2>
+<ul>
+  <li>Report from IP Working Group (Patrick Curran, Steve Wolfe, Anish Karmarkar)</li>
+  <ul>
+    <li><a href="http://java.net/projects/jsr358/downloads/download/Meeting Materials/Patent-Altenatives-and-Standard-Licenses.pdf">IBM's proposal on Patents and Standard Licensing</a></li>
+  </ul>
+  <li><a href="http://java.net/projects/jsr358/downloads/download/Meeting Materials/Standards-Individual_Participation.pdf">Individual members: how other standards bodies do it</a> (Bruno Souza) </li>
+</ul>
+<h2>Attendees</h2>
+<ul>
+  <li>All EC members except ARM and Nokia were represented at the meeting</li>
+</ul>
+<h2>Minutes</h2>
+<h4>Standard licensing terms</h4>
+<p>EC members then reconvened as the JSR 358 Expert Group. Patrick provided a brief summary of the activities of the <em>IP Working Group</em> and discussion then focused on IBM's proposals for standard licensing terms. Steve Wolfe summarized the proposal (see <a href="Patent-Altenatives-and-Standard-Licenses.pdf">the presentation</a> for details.) He argued that the JSPA is too complex, and that modern software developers expect a simpler, &quot;more open&quot; licensing model. He noted that very few JSRs are led by anyone but Oracle, and suggested that this complexity is partly responsible for that disparity. He recognized that Oracle must be able to fulfil its commercial obligation and to monetize the &quot;enormous investment&quot; it has made in Java. He suggested that we try to craft a JSPA that builds on standard licenses while at the same time adding the necessary provisions to support Oracle's obligations. We should not start with the current JSPA and try to engineer the complexity out of it - rather we should start with something new and very simple, and add on whatever is necessary to support Oracle. He asked whether EC members generally supported the basic idea of defining standard licenses.</p>
+<p>Several EC members expressed their support for this idea. Steve suggested that one of the standard licenses might be the OpenJDK TCK license. </p>
+<p>Patrick noted that in the IP working group we had discussed two different approaches to matching inbound and outbound licensing terms:</p>
+<ol>
+  <li> to create a single inbound license that is broad enough to cover all outputs</li>
+  <li> to define several inbound licenses, each of which maps to one of the approved outbound licenses</li>
+</ol>
+<p>He asked how the inbound license(s) could cover the case where the Spec Lead chooses a commercial outbound license for the RI or TCK?</p>
+<p>Scott Jameson argued that the first approach is the cleanest and simplest.</p>
+<p>Gil Tene pointed out that we must consider both patents and copyrights for each of the three artifacts: Spec, RI, and TCK. He argued that binary licenses for the RI and TCK would be sufficient for the needs of implementers, and noted that Azul is more concerned about the ability of implementers to access these binaries in a consistent manner.</p>
+<p>Don Deutsch asked why the JSPA had been drawn up to give Spec Leads the choice of their own licenses. Steve Wolfe responded that in the early days Sun believed that the opportunity to monetize investment would  encourage participation.</p>
+<p>Steve  asked whether EC members believed that such &quot;license freedom&quot; is still necessary.</p>
+<p>Scott Stark argued for free  access to RIs and TCKs. Steve Wolfe asked why we couldn't use the OpenJDK TCK license model. Gil responded that the license doesn't permit test results to be shared. Patrick noted that we wrote into JCP 2.8 a statement that TCK licenses must not prohibit such sharing and pointed to language in the license that explicitly permits sharing. Scott argued that this doesn't go far enough since it doesn't permit the sharing of the tests themselves. Patrick responded that this matter has been  discussed within Oracle and that there is no intent to prohibit the free discussion of test results including exchanging whatever portions of the TCK might be necessary for that discussion.</p>
+<p>Steve Harris asked why can't we  simply offer a standard menu of licenses. Gil responded that this would  be OK so long as provision was made for Oracle. Steve responded that we  shouldn't complicate things by including a commercial license for Oracle. Gil noted that this is unrealistic, since most JSRs are led by Oracle [After the meeting Steve Harris submitted a <a href="http://java.net/downloads/jsr358/Meeting Materials/RITCKLicensingProposal-v1.1.pdf">detailed proposal</a> to the IP Working Group, where it is under consideration.]</p>
+<p>It was suggested that we  simply include a &quot;commercial license&quot; as one of the options that any Spec Lead could choose. Steve Wolfe pointed out that while it is OK to predefine a list of licenses it would not be appropriate for the EC to &quot;approve&quot; or &quot;disapprove&quot; another member's choice of license.</p>
+<p>Steve Wolfe suggested that Oracle could craft such a commercial license. Gil suggested that the license should permit &quot;R&amp;D&quot; but need not necessarily permit certification of compatibility. Scott Stark replied the the license must permit &quot;R&amp;D&quot; by any JSR contributor, but need not necessarily permit certification of compatibility.</p>
+<p>EC members  agreed that a small number of standard licenses will be defined. The Spec Lead must offer at least one of these. Implementers will be free to negotiate separate (additional) licenses with the Spec Lead if they wish.</p>
+<p>Gil argued that  one of the standard licenses should be modeled on the OpenJDK TCK license. Patrick pointed out that this license is in fact quite restrictive, since it permits use only  on implementations derived from OpenJDK and that will be licensed under GPL. Gil responded that it should be more broadly formulated  with a specific scope related to a particular body of open source work. He also reiterated his  concern that licensees have continuity - a guarantee that they can continue to license the TCK. He noted that currently the license is renewable yearly and said that Azul needs more of a &quot; runway.&quot;</p>
+<p>We agreed that we will need a formal process for modifying the list of approved licenses. Since modifying the JSPA might be too time-consuming we might  need a more lightweight process to add a license to the Addendum.</p>
+<p>Patrick asked  about the inbound grants. Scott Jameson said that this would depend on the outbound licenses. Mike Milinkovich argued that symmetry between inbound and outbound makes things very simple. Patrick asked what inbound license would correspond to an outbound commercial license. Mike suggested a commercial inbound license like the OCA that grants ownership.</p>
+<p>Steve Wolfe asked how we should handle the additional grants necessary for inclusion in the platform? Should this be built in to the inbound license or should it be a supplemental grant? Mike Milinkovich argued that a supplemental license would be unmanagable given the number of  contributors (too much  paperwork.) This would prohibit  hosting a project at Apache, for example.</p>
+<p>We discussed the possibility of polling members to ask what licenses they wanted to include but agreed that this is not necessary right now since we seem to have broad agreement that these should include: GPL + classpath exception, Apache, EPL, &quot;commercial,&quot; and &quot;intended for inclusion in the platform.&quot;</p>
+<p>Patrick suggested that as a next step Don Deutsch and he would talk to Oracle's lawyers to see if they could suggest/draft a list of sugggested licenses, and that they would report back to the EC at a future meeting. </p>
+<p>Throughout this discussion we addressed, but did not resolve, the question of whether or not the <em>Essential Patent</em> grants defined in Section 6 of the JSPA should be preserved or whether JCP members' obligations (to grant Essential Patents even for JSRs they are not involved with) should be relaxed. In the process of the discussion we distinguished the following conditions that must  be considered:</p>
+<ul>
+  <li>If you are a member of the  EG: you make  essential patent rights.</li>
+  <li>If you are not in the EG and you make a contribution: you grant essential patent rights with respect to that contribution.</li>
+  <li>If you are not in the EG and  you don't make a contribution: should you or should you not make essential patent grants?</li>
+</ul>
+<p>Steve Wolfe, Scott Jameson, and Mike Milinkovich agreed to get together to develop a more specific proposal on essential patents (factoring in the conditions under which grants might be terminated.)</p>
+<h4>Individuals and IP flow</h4>
+<p>We then moved on to a discussion of the role of individuals within the JCP and how we could ensure that all contributed IP is covered by an appropriate grant. Bruno Souza presented <a href="Standards-Individual_Participation.pdf">a summary</a> of how several different standards organizations handle this matter. It soon became clear that although there is no consistent &quot;industry-wide&quot; process for handling individual memberships, the JCP's approach - whereby individuals can accrue without charge all of the benefits that commercial organizations have - is unique. Several EC members argued that we should be more concerned about ensuring that donated IP is &quot;secure&quot; than with encouraging large numbers of individuals to &quot;join&quot; the organization when they might not in fact be willing to participate in any meaningful way. Other members expressed concern that if we change the membership rules now we might undermine our recent emphasis on  transparency and participation.</p>
+<p>On the matter of individual members acting as <em>agents</em> of their employers we agreed that employed individuals should not be permitted to join an Expert Group unless their employer is willing to sign the JSPA. This would not necessarily amount to &quot;free membership&quot; for the employer since a reduced fee might be charged, and the privileges of such membership might  be less than those granted to &quot;full&quot; members.</p>
+<p>We suggested that we might be able to define additional categories of  membership for individuals that would not involve the employer signing the JSPA (for example, an <em>Associate Individual</em> membership.) We decided that an ad-hoc group should be formed to work on this and to come back with suggestions. As a first step, Bruno Souza agreed to produce a summary document that could be used as a starting point for discussion.</p>
+<p>We also agreed that - following the Eclipse model - we need an <em>IP Provenance</em> process to enable Spec Leads to judge the &quot;IP quality&quot; of contributions. We did not make any specific proposals for how to achieve this.</p>
+<p>&nbsp;</p>
+</body></html>

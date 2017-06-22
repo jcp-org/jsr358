@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+    <title>JSR 358 IP Working Group minutes: August 8 2014</title>
+    <!--
+My personal stylesheet: <link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+And the jcp.org version: <link href="http://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+-->
+    <link type="text/css" rel="stylesheet" href="../../../docs/PCurranStyles.css" />
+    <link type="text/css" rel="stylesheet" href="https://jcp.org/files/PCurranStyles.css" />
+  </head>
+  <body>
+    <h1 align="center">JSR 358 IP Working Group Meeting Minutes<br />
+      for August 8 2014</h1>
+    <h2>Date</h2>
+    <p>Friday 8 August 2014, 11:00-12:00 pm PDT</p>
+    <h2>Location
+    </h2>
+    <p>Teleconference</p>
+    <h2>Agenda</h2>
+    <ul>
+      <li>Review <a href="https://java.net/downloads/jsr358/Meeting%20Materials/JSR-358-IPWG-Minutes-July-25-2014.html">minutes</a>
+        of last meeting</li>
+      <li>Discussion of open-source and compatibility in preparation for next
+        week's EC meeting</li>
+    </ul>
+    <h2>Attendees</h2>
+    <ul>
+      <li> Patrick Curran (PMO)</li>
+      <li>Werner Keil</li>
+      <li> Steve Harris (CloudBees)</li>
+      <li>John Pampuch (Azul)</li>
+      <li>Mike Milinkovich (Eclipse)</li>
+      <li>Steve Wolfe (IBM)</li>
+      <li>Scott Stark (RedHat)</li>
+      <li> Anish Karmarkar (Oracle)</li>
+      <li>Prasad Yendluri (Software AG)</li>
+      <li>Heather Vancura (PMO)</li>
+      <li>Mike Marzo (Goldman Sachs)</li>
+      <li>Anil Kumar (Intel)</li>
+    </ul>
+    <h2><strong>Minutes</strong></h2>
+    <p>After reviewing the minutes of the last meeting Patrick introduced the
+      subject. He noted that <font face="Times New Roman, Times, serif">our
+        high-level goals for JSR 358, as we reported
+          them most recently at the <a href="https://jcp.org/aboutJava/communityprocess/ec-public/materials/2013-11-12/JSR-358-Progress-November-2013.pdf">public EC meeting in December 2013</a></font>, include the following:</p>
+    <ul>
+      <li><font face="Times New Roman, Times, serif">Maintain compatibility
+        guarantees.</font></li>
+      <ul>
+        <li>All JSRs will be covered by a standard Spec license that includes
+          strong compatibility requirements.</li>
+        <li><font face="Times New Roman, Times, serif">All implementations must
+          pass the TCK.</font></li>
+      </ul>
+      <li>Embrace open-source licensing and development processes.</li>
+      <ul>
+        <li><font face="Times New Roman, Times, serif">Reference Implementations
+          must be developed through open-source projects and released under
+          open-source licenses.</font></li>
+      </ul>
+    </ul>
+    <p>He noted that there is a fundamental tension between these goals, which cannot
+      be (completely) reconciled since open-source licenses, by definition, cannot impose restrictions on what licensees may do with the licensed
+      code. Licensees are therefore free to create incompatible derivatives of open-sourced RIs. He pointed out that these tensions exist today since most RIs not led by Oracle are licensed
+      under Apache, while Oracle licenses the Java SE and Java EE platforms
+    under GPL. </p>
+    <p>He argued that despite these tensions our current licensing model is reasonably successful at
+      maintaining compatibility and we should not eliminate the compatibility
+      requirements from existing licenses. <br />
+  </p>
+    <p>On the other hand, he suggested that we should not create a new &quot;open-source&quot; license such as
+      the UPL and attach compatibility requirements to it since doing so would render
+  it &quot;not open-source&quot;. </p>
+    <p>Scott reported that RedHat's  lawyer had said that although it would definitely be unusual to incorporate
+    compatibility requirements into an open-source license that would not necessarily be impossible. Mike agreed that it would certainly be difficult to do so - the language would have to be very general, with 
+    no mention of Java.</p>
+    <p>John Pampuch and Scott Stark pointed out that if the open-source license we adopt for RIs contains any ambiguity  about the extent of the IP rights it grants,  then implementers would have an
+      incentive to pass the TCK in order to explicitly gain all the rights they
+    need, which would be granted to them via the Spec License.</p>
+    <p>The group then discussed the possibility of using either BSD or MIT for RIs.</p>
+    <p>Anish noted that if we did this it would mean that derivatives of the RI would be in the same
+      situation with respect to patent grants as independent implementations are.
+      Both would only have &quot;implicit&quot; patent rights unless they passed the TCK
+    and thereby gained explicit patent rights through the Spec License. </p>
+    <p>Patrick reminded the group that our primary goal on Tuesday will not be to propose a solution to the RI-licensing issue, but simply to establish whether the EC is in agreement on the overall approach. He suggested that we try to reach agreement on the following principles:</p>
+    <ul>
+      <li>Compatibility is important, and the             Spec License and the TCK process are the mechanisms we             should use to encourage/enforce compatibility.<br />
+      </li>
+             <li>RIs should be distributed under             open-source licenses.</li>
+             <li>We recognize that there is a tension between these             two goals: open-source licenses cannot impose             compatibility requirements. Consequently, people will be             free to create incompatible derivatives of open-sourced RIs.</li>
+             <li>If we create a new RI license (UPL,             for example) we should not try to incorporate compatibility             requirements into it.<br />
+             </li>
+             <li>We want to provide an incentive for             people who create implementations based on open-sourced RIs             to voluntarily comply with the compatibility requirements in             the Spec License.</li>
+    </ul>
+  <p>Patirck asked whether those present at this meeting agreed with these principles. There was no dissent. He agreed to incorporate this outline into the PMO presentation for discussion at next Tuesday's EC meeting.</p>
+    <h2><strong>Next meeting</strong>
+    </h2>
+    <p> Friday August 15 at 11:00 am PDT.</p>
+    <p><br />
+    </p>
+    <h2> </h2>
+  </body>
+</html>

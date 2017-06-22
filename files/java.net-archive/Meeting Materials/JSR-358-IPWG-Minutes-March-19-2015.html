@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+    <title>JSR 358 Working Group minutes: March 19 2015</title>
+    <!--
+My personal stylesheet: <link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+And the jcp.org version: <link href="http://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+-->
+    <link type="text/css" rel="stylesheet" href="../../../docs/PCurranStyles.css" />
+    <link type="text/css" rel="stylesheet" href="https://jcp.org/files/PCurranStyles.css" />
+  </head>
+  <body>
+    <h1 align="center">JSR 358 Working Group Meeting Minutes<br />
+      for March 19 2015</h1>
+    <h2>Date</h2>
+    <p>Thursday 19 March 2015, 9:00-10:00 PM PST</p>
+    <h2>Location
+    </h2>
+    <p>Teleconference</p>
+    <h2>Agenda</h2>
+    <ul>
+      <li>Review <a href="https://java.net/downloads/jsr358/Meeting%20Materials/JSR-358-IPWG-Minutes-March-5-2015.html">minutes of last week's meeting</a></li>
+      <li>Review <a href="https://java.net/jira/browse/JSR358-90?filter=12420">Action Items</a></li>
+      <li>Review the new <a href="https://java.net/downloads/jsr358/Working%20Documents/IP-flow-v10.pdf">IP-Flow document</a></li>
+      <li>Wording for Doodle polls on patent policy</li>
+      <li>Flat IP flow
+        <ul>
+          <li>Use-cases</li>
+          <ul>
+            <li>Transferring IP from one Spec Lead to another while a JSR is in progress (perhaps because the original Spec Lead loses interest and the JSR goes dormant).</li>
+            <li>Transferring IP from one Spec Lead to another after a JSR is completed (for example due to bankruptcy as in the Siemens, BenQ, Qisda case several years ago).</li>
+            <li>Incorporating work developed elsewhere without the need to create &quot;side-letters&quot; (see JSRs 235 and 236), making it easier to<em> implement then standardize</em>&nbsp;rather than - as today -&nbsp;<em>standardize then implement</em>.</li>
+            <ul>
+              <li>Review the <a href="https://jcp.org/aboutJava/communityprocess/JCP_SCLA.pdf">side-letter</a> that was used for JSRs 235 and 236. Is this issue still important? If so, how will a flat IPR policy help?</li>
+            </ul>
+            <li>Enable a member who is not the Spec Lead to apply defensive termination against
+              someone who initiates litigation alleging patent infringement. </li>
+          </ul>
+        </ul>
+      </li>
+      <li>Next steps      </li>
+    </ul>
+    <h2>Attendees</h2>
+    <ul>
+      <li> Patrick Curran (PMO)</li>
+      <li>Michael Berg (Intel)</li>
+      <li>Mike DeNicola (Fujitsu)</li>
+      <li>Anish Karmarkar (Oracle)</li>
+      <li>Mike Milinkovich (Eclipse)</li>
+</ul>
+    <h2><strong>Minutes</strong>    </h2>
+    <p>We reviewed the minutes of last week's meeting and the open AIs.</p>
+    <p>We had a brief discussion about Steve Wolfe's use-case, agreeing that defensive termination will be simpler if the Spec Lead is not in the middle. Patrick will remind Steve of his AI to write up this use-case.</p>
+    <p>We reviewed the new version of the IP-Flow document and discussed whether the two proposed poll questions really are (or need to be) linked. We agreed that they do not, if we re-word the first question to make it clear that we propose only to replace Royalty Free patent grants with a non-assert covenant. Michael Berg asked whether the licensor would be free to define the precise terms of the non-assert covenant. We agreed that - as with the current RF grants - the terms would be standard, and defined in (or referenced normatively from) the JSPA.</p>
+    <p>We therefore agreed to change the first question to  &quot;Should we replace explicit Royalty-Free patent grants with a JCP-standard non-assert covenant?&quot; </p>
+    <p>This change will make it possible to answer yes to the first question and no to to the second.</p>
+    <p>For clarity, we agreed to change the second question to: &quot;Should we remove the obligation to license on FRAND terms Essential Patents for JSRs where the patent-holder does not serve on the EG?&quot;</p>
+    <p>Anish asked whether a non-assert policy might be considered more OS-friendly than explicit RF grants. Mike Milinkovich responded that he's not sure there's a significant difference. He did note that the Free Software Foundation has a political preference for non-asserts.</p>
+    <p>Anish: some companies prefer RF since this would in theory permit them to impose <strong>some</strong> conditions.</p>
+    <p>Anish: OASIS and OSGi both have non-assert IPR modes. For the past couple of years most (all?) OASIS TCs have chosen non-assert.</p>
+    <p>Anish: suggests we provide some background to help those who were not on this call understand exactly what we are referring to in each case.</p>
+    <p>Patrick agreed, suggesting that the three different grants: IP Grants from Contributors, Essential Patent grants from EG members with respect to material they did not contribute, and Essential Patent grants from non-EG members be numbered. The Doodle polls can then state that the first question refers to grants #1 and #2, while the second question refers to grant #3.</p>
+    <p>Mike Milinkovich reminded Patrick that we've agreed to also include a  &quot;don't care&quot; option in the polls. Patrick agreed to do so, and also suggested including an &quot;if need be&quot; option if that is possible for multiple-choice questions.</p>
+    <p>We then moved on to a discussion of the Supplemental License Agreements (&quot;side letters&quot;) from JSRs 235 and 236, wondering whether we will need similar language in the JSPA. We thought not, since the purpose of these agreements seems to have been to ensure that patent grants vest before the JSR goes final, and we are already planning changes to address this. </p>
+    <p>Anish reported that the SDO concept (incorporated into JSR 235) was developed in a private &quot;consortium&quot; in which IBM and BEA were prime movers, and was then donated to OASIS. We agreed that it would be helpful to find someone (Steve Wolfe?) who was involved in or knows about the original discussions in order to help us to understand the motivation behind these agreements (what particular IP-case was being addressed)?</p>
+    <p>Mike Milinkovich expressed the opinion that these agreements addressed a &quot;corner case&quot; and suggested that we probably shouldn't spend much time addressing them.</p>
+    <p>Patrick agreed, but noted that we should not &quot;paint ourselves into a corner&quot; by modifying the JSPA in such a way that we would be unable to  incorporate an externally-developed standard into the JCP.</p>
+    <p>We agreed to add that as a goal to the IP-Flow document and to remove this particular item from the list of use-cases.</p>
+    <p>Patrick promised to initiate the Doodle polls and to update the IP-Flow document for further discussion at next week's meeting. [See the <a href="https://java.net/projects/jsr358/pages/WorkingDocuments">Document Archive</a> for an updated version (v.11) of the IP-Flow document.]</p>
+    <h2><strong>Next meeting</strong></h2>
+    <p>Teleconference: Thursday March 26 2015, from 9:00 am to 10:00 am PDT.</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </body>
+</html>

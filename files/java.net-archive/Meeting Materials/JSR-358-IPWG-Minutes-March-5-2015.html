@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+    <title>JSR 358 Working Group minutes: March 5 2015</title>
+    <!--
+My personal stylesheet: <link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+And the jcp.org version: <link href="http://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+-->
+    <link type="text/css" rel="stylesheet" href="../../../docs/PCurranStyles.css" />
+    <link type="text/css" rel="stylesheet" href="https://jcp.org/files/PCurranStyles.css" />
+  </head>
+  <body>
+    <h1 align="center">JSR 358 Working Group Meeting Minutes<br />
+      for March 5 2015</h1>
+    <h2>Date</h2>
+    <p>Thursday 5 March 2015, 9:00-10:00 PM PST</p>
+    <h2>Location
+    </h2>
+    <p>Teleconference</p>
+    <h2>Agenda</h2>
+    <ul>
+      <li>
+        Review <a href="https://java.net/downloads/jsr358/Meeting Materials/JSR-358-IPWG-Minutes-Feb-26-2015.html">minutes of last week's meeting</a>
+        <ul>
+          <li>Flat IP flow
+            <ul>
+              <li>Definition </li>
+              <li>Use-cases</li>
+              <ul>
+                <li>Transferring IP from one Spec Lead to another while a JSR is in progress (perhaps because the original Spec Lead loses interest and the JSR goes dormant).</li>
+                <li>Transferring IP from one Spec Lead to another after a JSR is completed (for example due to bankruptcy as in the Siemens, BenQ, Qisda case several years ago).</li>
+                <li>Incorporating work developed elsewhere without the need to create &quot;side-letters&quot; (see JSRs 235 and 236), making it easier to implement<em> then standardize</em>&nbsp;rather than - as today -&nbsp;<em>standardize then implement</em>.</li>
+              </ul>
+            </ul>
+          </li>
+          <li>Prep for March 10 EC meeting </li>
+          <li>Next steps</li>
+        </ul>
+      </li>
+    </ul>
+    <h2>Attendees</h2>
+    <ul>
+      <li> Patrick Curran (PMO)</li>
+      <li>Heather Vancura (PMO)</li>
+      <li>Scott Stark (Red Hat)</li>
+      <li>Mike DeNicola (Fujitsu)</li>
+      <li>Steve Wolfe (IBM)</li>
+      <li>Mike Milinkovich (Eclipse)</li>
+      <li>Prasad Yendluri (Software AG)</li>
+    </ul>
+    <h2><strong>Minutes</strong>    </h2>
+    <p>We reviewed the minutes of last week's meeting.    </p>
+    <p>We then discussed use-cases and justifications for a flat IP-flow. We agreed on one: it would simplify the transfer of Spec Lead responsibilities since the &quot;new&quot; Spec Lead would automatically have the IP rights they need to pick up the old work and continue with it. (Under the current JSPA they could not do so unless they negotiated a transfer of rights from the old Spec Lead, and if the JSR was not final they would need to contact everyone who had contributed to the JSR in order to negotiate a transfer of IP rights.)</p>
+    <p>Steve, MikeM, Patrick believe that we can word the JSPA in such a way (IP is granted for inclusion in conformant implementations of this and future revisions of this JSR) such that IP would automatically be granted to a successor Spec Lead without the need for an explicit transfer. We also agreed that it would be preferable to that the JSPA does <strong>not</strong> refer to to the Process Doc (which is not a &quot;legal&quot; document in the same sense).</p>
+    <p>Patrick asked Mike Milinkovich to review the JSPA looking for language that would inhibit or prohibit the release of interim implementations of non-final JSRs. Patrick agreed to follow up with Don Smith (Oracle) on Eclipse's immediate concerns about implementing support for Java SE 9's modularity prior to the Final Release of the platform JSR.</p>
+    <p>Steve Wolfe suggested another possible use-case. If someone litigates  against JCP member X, the hub-and-spoke IP model might make it difficult  for X to apply defensive termination to the litigator since X got their  rights from the Spec Lead. Steve promised write this up in more detail.</p>
+    <p>Another justification (not a use-case): we want an IPR policy  that is &quot;friendly&quot; and &quot;familiar&quot; to the younger developer community who have grown up in an &quot;open source world&quot;.</p>
+    <p>The other use-case we came up with during our earlier discussions related to the incorporation of standards developed in external organizations into the JCP. (How could JSR development be synchronized with external standards development that operates on a different schedule?)</p>
+    <p>We wondered whether this still a concern. (When we revisited this matter - the so-called &quot;Purple JSRs - during the first phase of JSR 358 EC members expressed little interest in pursuing it.)  Would immediate-vesting of IP solve the problem or do we need an additional change, and if so would flattening the IP flow help to resolve this?</p>
+    <p>We decided that we couldn't  think of further use-cases but agreed that we should ask the  full EC to do so during next week's meeting.    </p>
+    <p>Our immediate goals for the EC meeting and after are to confirm that we have agreement on the IP-flow document and to develop the the use-cases/justifications for Oracle Legal. We would then take the document to Legal and and ask them to draft a new version of the JSPA.</p>
+  <p>Patrick asked whether we need to have specified all<strong></strong> of our requirements before we approach Legal to re-draft. We agreed that we do not, but since turnaround is slow we should incorporate as many of our requirements as possible. Patrick pointed out that there are  two major areas where we expect to want to change the JSPA: a flat IP-flow and the handling of patents. Since both of these are addressed in the IP-flow document, if we can agree on its contents then that would be a good time to request a re-draft.</p>
+  <p>We should therefore also discuss our patent proposal with the full EC. We should also ask whether members favor a non-assert or a Royalty-Free grant (either would work with the defensive-termination proposal we drafted earlier). Patrick suggested that the best way to take soundings on this would be a Doodle poll (members would be unlikely/unwilling to offer an opinion during an EC meeting, but instead would need to consult with their lawyers).</p>
+  <p>Finally, we agreed to schedule our JSR 358 discussions during the first hour of next week's EC meeting in order to accommodate members who may need to leave early. We also agreed to skip next week's Working Group meeting and to resume the following week.</p>
+  <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>JSR 358 EG minutes: February 1 2013</title>
+
+<!--
+
+My personal stylesheet: <link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+And the jcp.org version: <link href="http://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+
+-->
+
+<link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+<link href="http://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+<h1 align="center">JSR 358 IP Working  Group Meeting Minutes<br />
+for February 1 2013</h1>
+<h3>Meeting details </h3>
+<ul>
+  <li>Date &amp; Time
+    <ul>
+      <li>February 1, 2013. 1:00-2:00 pm PST</li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li>Location
+    <ul>
+      <li>Teleconference</li>
+    </ul>
+  </li>
+</ul>
+<h3>Agenda</h3>
+<ul>
+  <li>Review&nbsp;<a href="http://java.net/downloads/jsr358/Meeting%20Materials/JSR-358-IPWG-Minutes-Jan-25-2013.html">meeting minutes</a>&nbsp;from last meeting</li>
+  <li><a href="http://java.net/projects/jsr358/downloads/download/Meeting%20Materials/RITCKLicensingProposal-v1.1.pdf">Steve Harris's proposal on RI and TCK licensing</a></li>
+  <li>Review issues from&nbsp;<a href="http://java.net/jira/secure/IssueNavigator.jspa?mode=hide&amp;requestId=11399">Issue Tracker</a></li>
+  <li>Follow up and next steps</li>
+</ul>
+<h2>Attendees</h2>
+<ul>
+  <li>Patrick Curran</li>
+  <li>Scott Jameson</li>
+  <li>Steve Harris</li>
+  <li>Anish Karmarkar</li>
+  <li>Steve Wolfe</li>
+</ul>
+<h2>Minutes</h2>
+<p>We reviewed the minutes of the last meeting.</p>
+<p><strong>The RI/TCK licensing proposal</strong></p>
+<p>Slide 2: SteveH - don't include a commercial license. Instead handle the umbrella JSRs separately.</p>
+<p>Slide 3: Scott: Contributor agreements are addressed here. SteveH: yes, but let's try to avoid digging into the details.</p>
+<p>Slide 4: Scott: cost recovery now appears to be primarily Oracle's concern, but historically it hasn't been only Oracle. SteveH: at the f2f the sense seeemed to be that nobody but Oracle had serious concerns with the open-source model. If someone new comes in and wants to make money from JSRs maybe we should tell them &quot;that's no longer the way we do stuff.&quot; Scott: suggest removing &quot;Oracle&quot; from this bullet.</p>
+<p>Slide 5: SteveH: the definition of &quot;new&quot; may need to be expanded (what if a &quot;new&quot; JSR is logically an extension of an existing one?)</p>
+<p>Slides 6 and 9: Patrick: Why would somebody choose the more restrictive license rather than the open-source version? SteveH: the open-source licenses say nothing about how the branding process works. It would have to be handled elsewhere. Out of scope for this presentation. Patrick: what is &quot;the TCK&quot; (as defined in the JSPA) for compatibility-related purposes? Is it whatever the Spec Lead says it is? It's the open-source licensed TCK unless it isn't? Scott: we need to redefine the coupling between the compatibility requirements and the TCK. </p>
+<p>SteveW: I prefer to use the term Platform JSR rather than Umbrella JSRs, and believe that these would be the ones that you use for certification. SteveH: I was using the terms interchangably.</p>
+<p><strong>Note: </strong>neither the JSPA nor the Process document defines the term <em>Platform JSR</em>. The Process Document defines an <em>Umbrella JSR</em> as &quot;A JSR that defines or revises a Platform Edition or Profile Specification.&quot; (Profiles are included because these are considered to be fundamental <em>platform-like</em> constructs in the Java ME space.)</p>
+<p>SteveH: The spec license is what imposes the compatibility obligations.</p>
+<p>Anish: IP rights flow only to those who pass &quot;the TCK?&quot; </p>
+<p>SteveW: you can't claim compatibility by passing a derived TCK.</p>
+<p>Scott: I will get IP rights via the Apache license on the RI. The Spec License is irrelevant under these circumstances.</p>
+<p>Anish: The Spec license says that IP rights flow only to compatible implementations (those that pass &quot;the official TCK.&quot;)</p>
+<p>Scott: That's true if your implementation is independent. But if I derive from the RI I can do whatever I want. </p>
+<p>SteveW: Scott's argument suggests that we can't use open-source licenses and maintain compatibility. That's not true. If you take the RI code and create a derivative work you don't get IP rights and you can't call your implementation Java. If you infringe my IP I can sue you. </p>
+<p>SteveH: Do the Specification licensing limitations alone (with the associated IP grants) provide sufficient legal structure and incentive to achieve the JCP goal of compatibility when the RI and TCK are both available under open source licenses? Could IBM explain their belief that open-source licensing of the RI and TCK does not undermine the way in which compatibility can be maintained through the Spec License.?</p>
+<p>SteveW: yes, I can do that. Hint - the value of the logo drives compatibility.</p>
+<p>A follow-on question articulated by SteveH in response to concerns raised by Patrick and Anish: to what extent do we need to clarify the definition of TCK in Spec licenses or the JSPA to have confidence that the availability of an open source version does undermine the compatibility goals and cause ambiguity as to whether or not an implementation of the Spec is compatible? </p>
+<p>SteveH empasized that the compatibility logo would be associated with the umbrella (platform) JSRs, which are exempt from the requirement to release an open-source RI and TCK. He noted that existing JSRs, and possibly also  new JSRs that are substantially derived from existing JSRs, could remain closed-source. He wondered whether these exemptions would be sufficient to  address Oracle's concerns from a business standpoint? Will Oracle agree to open-source new component JSR RIs and TCKs like everyone else? </p>
+<p>Patrick promised to take these questions to Oracle's execs and to get an answer as soon as possible.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body></html>

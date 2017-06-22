@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+    <title>JSR 358 IP Working Group minutes: September 12 2014</title>
+    <!--
+My personal stylesheet: <link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+And the jcp.org version: <link href="http://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+-->
+    <link type="text/css" rel="stylesheet" href="../../../docs/PCurranStyles.css" />
+    <link type="text/css" rel="stylesheet" href="https://jcp.org/files/PCurranStyles.css" />
+  </head>
+  <body>
+    <h1 align="center">JSR 358 IP Working Group Meeting Minutes<br />
+      for September 12 2014</h1>
+    <h2>Date</h2>
+    <p>Friday 12 September 2014, 11:00-12:00 pm PDT</p>
+    <h2>Location
+    </h2>
+    <p>Teleconference</p>
+    <h2>Agenda</h2>
+    <ul>
+      <li>Further discussion of open-source RI licensing</li>
+    </ul>
+    <h2>Attendees</h2>
+    <ul>
+      <li> Patrick Curran (PMO)</li>
+      <li>Don Deutsch (Oracle)</li>
+      <li>Scott Stark (RedHat) </li>
+      <li>Steve Wolfe (IBM)</li>
+      <li> Steve Harris (CloudBees)</li>
+      <li>Mike DeNicola (Fujitsu)</li>
+      <li>Anish Karmarkar (Oracle)</li>
+      <li>Heather Vancura (PMO)    </li>
+    </ul>
+    <h2><strong>Minutes</strong>    </h2>
+    <p><strong>Patrick:</strong> we have feedback from the lawyers on the UPL and also (coming soon - after exec approval) drafts of the three JSR 364 membership agreements. Don will provide the Oracle Legal feedback.</p>
+    <p><strong>Don:</strong></p>
+    <p>Oracle is responsible for                       licensing the platforms. For reasons that we've discussed in earlier meetings Oracle's Open Source Officer has decided                       that except for special circumstances (for                       example, an update to a JSR that was previously                       licensed under Apache) our intention is that                       from now on&nbsp;we will not incorporate                       Apache-licensed code into the Java platform. </p>
+  <p>The UPL was crafted to                       permit us to incorporate OS-licensed RIs                       into the platform; please use it. (As Jim Wright suggested at a recent meeting, we can tweak the contents of the Larger Works file to address your concerns about the license's reach.)</p>
+  <p>As an alternative                       to the UPL we can accept MIT or BSD-licensed code into the platform so long as contributors have signed a JSP membership agreement (JSPA or Affiliate) and indicate their intention to contribute to an RI project. This requirement will make sure that                       all contributors have made the necessary IP                       commitments, including explicit patent grants.                       We expect the Spec Leads to enforce this                       requirement.</p>
+  <p>We therefore propose that all RIs be offered under one of four possible licenses: UPL, BSD, MIT, and GPL. We will accept UPL-licensed RIs into the platform unconditionally. MIT and BSD-licensed RIs will be acceptable if the Spec Lead can confirm to Oracle that all contributors have signed a membership agreement. GPL-licensed code cannot be incorporated into platform due to Oracle's commitment to dual-license under commercial and GPL terms.</p>
+  <p>Oracle's current plans are to continue to                       license its own RIs (including the platform RIs)                       under GPL v2 (plus Classpath Exception). Oracle                       will be happy to contribute to RI projects where                       the outbound license is UPL, MIT, or BSD. </p>
+  <p>Comments/questions?</p>
+    <p><strong>Scott Stark:</strong> any changes to the UPL since we last saw it?</p>
+    <p><strong>Don:</strong> Jim suggested some changes but then the discussion got derailed. <strong>Patrick</strong> confirms.</p>
+    <p><strong>Steve Harris</strong>: HP had some concerns about the breadth of the patent grant. </p>
+    <p><strong>Don:</strong> I don't think we discussed these in depth, nor resolved them.</p>
+    <p><strong>Patrick:</strong> let's assume that UPL can be tweaked to address concerns about breadth.</p>
+    <p><strong>SteveH</strong> provided a<a href="http://h30499.www3.hp.com/t5/HP-Software-Solutions-Blog/Use-Oracle-s-UPL-Abandon-Your-Intellectual-Property/ba-p/6485626"> reference to a recent blog</a> from HP's CTO Martin Fink and suggested that this summarized HP's concerns.</p>
+    <p><strong>SteveH</strong> wondered whether Eclipse dual-licensed under EPL and BSD, together with the Eclipse Foundation's contribution policies, would suffice?</p>
+    <p><strong>Patrick: </strong>are you asking whether in this case Oracle would waive the requirement that all contributors must have signed a JCP membership agreement? If so, the answer is &quot;no&quot;. He  wondered whether the requirement that all contributors be JCP members would be considered a &quot;side agreement&quot; or an alternative to Eclipse's standard contributor agreement, and suggested that we need an opinion from Mike Milinkovich.</p>
+    <p><strong>Scott Stark</strong> said that he would need to consult with RedHat's lawyer to figure out whether they can  accommodate UPL.</p>
+    <p><strong>Steve Wolfe</strong> argued that MIT and BSD are very radical licenses with very broad rights. IBM hasn't encountered them widely in the commercial world (they are used more in academic world). If the JCP rejects the Apache license we will significantly limit the number of potential contributors</p>
+    <p><strong>SteveH</strong> agreed, reiterating that Apache is the license of choice for open-source development processes.</p>
+    <p><strong>Mike DeNicola </strong>agreed with the concerns about not accepting Apache.</p>
+    <p><strong>Patrick: </strong>anything more to discuss? Obviously we need feedback from HP and Eclipse...    </p>
+    <p><strong>SteveW:</strong> please clarify - the proposal is that only these four licenses are permitted for RIs?</p>
+    <p><strong>Patrick:</strong> yes. <strong>Don</strong> agreed.</p>
+    <p>Someone then pointed out that Java EE is licensed under both GPL and CDDL. Members discussed  whether the Spec Lead is permitted to license under multiple licenses. </p>
+    <p><strong>Patrick:</strong> Our original intent was that the Spec Lead <strong>must</strong> offer the RI under one of the &quot;approved&quot; open-source licenses, but <strong>may</strong> also offer  other licenses (e.g. additional open-source licenses or commercial licenses).</p>
+    <p><strong>Don/SteveW:</strong> if something is licensed under both a restrictive and a liberal license it might be difficult to enforce the more restrictive license terms. </p>
+    <p><strong>Scott:</strong> does Jim still intend to get UPL approved by OSI?</p>
+    <p><strong>Don/Patrick:</strong> yes</p>
+    <p>We agreed that further discussion is needed and that we need input from more EC members. </p>
+    <p><strong>Next steps:</strong> We will meet again next Friday. Patrick will ncourage other EC members to attend that meeting. </p>
+    <h2><strong>Next meeting</strong>
+    </h2>
+    <p> Friday September 19 at 11:00 am PDT.</p>
+    <p><br />
+    </p>
+    <p>&nbsp;</p>
+  </body>
+</html>

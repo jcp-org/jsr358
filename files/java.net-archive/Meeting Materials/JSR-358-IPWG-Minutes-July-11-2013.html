@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>JSR 358 IP Working Group minutes: June 27 2013</title>
+
+<!--
+
+My personal stylesheet: <link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+And the jcp.org version: <link href="http://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+
+-->
+
+<link href="../../../docs/PCurranStyles.css" rel="stylesheet" type="text/css" />
+<link href="http://jcp.org/files/PCurranStyles.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+<h1 align="center">JSR 358 IP Working Group Meeting Minutes<br />
+for July 11 2013</h1>
+<h2>Date</h2>
+<p>Thursday 27 June 2013, 1:00-2:00 pm PDT</p>
+<h2>Location
+</h2>
+<p>Teleconference</p>
+<h2>Agenda</h2>
+<ul>
+  
+  <li>Contributor agreements and incorporating non-Oracle JSRs into the platform</li>
+  <ul>
+    <li>With special guest Jim Wright - Oracle's Open Source Policy and Strategy Officer</li>
+  </ul>
+</ul>
+<h2>Attendees</h2>
+<ul>
+  <li>Patrick Curran</li>
+  <li>Mike Milinkovich</li>
+  <li>Scott Jameson</li>
+  <li>Scott Stark</li>
+  <li>Heather Vancura</li>
+  <li>Steve Harris</li>
+  <li>Mike DeNicola</li>
+  <li>Werner Keil</li>
+  <li>Anish Karmarkar</li>
+  <li>Anil Kumar</li>
+</ul>
+<h2>Minutes</h2>
+<p>Introductions. Patrick summarized. MikeM: it's not so much that Eclipse has a well-regulated IPR but that Apache and Eclipse have their own CLAs and it would be technically and culturally difficult for them to adopt an additional/replacement CLA at the JCP's request.</p>
+<p>Steve Harris we want to ensure that RIs and TCKs can be developed at open-source communities. Choose a set of licenses that are familiar to people. Work with the open-source communities. </p>
+<p>Jim: we need to maintain our ability to incorporate code into the platform. Obviously we can't take things with viral licenses. </p>
+<p>If we take it as a given that it's a good thing to have code developed at &quot;external&quot; OS communities then how can that code be licensed to Oracle in a way that permits its incorporation into the platform? Provided that an open-source organization has a Contributor Agreement that permits a project license that will grant the necessary rights to Oracle then we might have a solution. Hypothetically Eclipse might have a CLA that commits to a license that meets our needs but perhaps Apache might not. Does each Forge's CLA and licensing regimen permit us to incorporate? We might need to audit each on a case by case basis. We don't want to police others so we must be able to rely on the CLAs and licenses. We don't really want to have to review each of the CLAs and to potentially have to argue with them.</p>
+<p>MikeM: it's <strong>necessary</strong> for Java's success that development happens outside of Oracle. We all agree on that.</p>
+<p>Jim: whether or not that's true we cannot accept arrangements that do not permit us to incorporate into the platform. </p>
+<p>MikeM: we agree that you need those rights for JSRs that are incorporated into Umbrella JSRs. Perhaps we should grant the rights only when a decision is made to incorporate. Do we need a regime for all JSRs that might potentially be incorporated in the future?</p>
+<p>Jim: is it OK to say that all JSRs must at least be <strong>licensed</strong> in a manner that permits us to incorporated. </p>
+<p>SteveH: Oracle has the right not to take stuff that isn't licensed appropriately. Quotes the example of the EclipseLink RI that was developed at Eclipse and incorporated into JavaEE.</p>
+<p>Patrick: that was dual-licensed under BSD. </p>
+<p>MikeM: the EPL + BSD combination is fairly common for projects that potentially might be licensed under GPL. We'd be happy to use that combination for JCP.</p>
+<p>Patrick asks Jim whether we would be OK with BSD? Jim doesn't want to answer that right now.</p>
+<p>MikeM: There are no explicit patent grants under BSD but we generally hold that having a dual license covers us. The patent grants come in under EPL Note that the combination of BSD plus patent grants is generally equivalent to Apache. Some Eclipse projcts are licensed that way.</p>
+<p>Jim: are you guys OK with a process that says we need to evaluate the different forges and determine whether the combination of the CLA and the licensing regime is acceptable? If they are suitable then and only then could an RI project be hosted there.</p>
+<p>MikeM: prefer to use the term Foundation rather than forge. I expect the number of &quot;approved&quot; Foundations to be small. We probably won't pull random stuff from GitHub.</p>
+<p>ScottJ: a couple of issues are being discussed. Licenses, and the IP regime (patent grants, for example). Are there other concerns?</p>
+<p>Jim: these were the two issues that seemed most important to me. That we can incorporate the code with minimal risk and that we have assurance that the foundations have processes in place to permit development to take place there without risk. Maybe choose one or two appropriate foundations?</p>
+<p>ScottJ: I suggest that we define the characteristics/requirements we would want and that we would use to evaluate foundations. </p>
+<p>MikeM: would prefer that approach to imposing a separate CLA on Eclipse. Is open to a discussion of what a suitable OSI-approved license might be. </p>
+<p>Jim: I was thinking more of a license we might offer.</p>
+<p>SteveH: inventing yet another license is not a good idea. Wouldn't send the right message to the open-source community. </p>
+<p>Jim: we indemnify our downstream recipients. </p>
+<p>MikeM: the ability to indemnify will have more to do with the licenses than with the foundation's processes. </p>
+<p>MikeM: the constraints are difficult but if your solution is that all Java development must take place at OpenJDK and under the OCA then you will kill Java.</p>
+<p>SteveH: Oracle incorporates open-source-licensed code into their products all the time and they indemnify their customers. It's just a matter of managing the risk.</p>
+<p>Jim: more questions for me?</p>
+<p>SteveH: The EC will be approving all JSRs. That's a way to check that the IPR regime and licensing terms are appropriate. Oracle could devise a form for the Spec Lead to fill out (where will you host the project, how will you manage IP, etc.?) This will help the EC to decide whether or not to approve the JSR.</p>
+<p>Jim: hmmm... not sure we should be evaluating foundation processes  on the fly when a JSR is submitted rather than defining processes in advance. Don't want to have to argue each time about whether or not a particular foundation is acceptable.</p>
+<p>MikeM: publish requirements in advance. There are several big conservative companies on the EC who will want to apply the same standards as Oracle does. It won't be all on Oracle to make the decisions.</p>
+<p>&nbsp;</p>
+</body></html>
